@@ -22,23 +22,23 @@ print("SECURITY ASSESMENT:")
 if 'immediate action required' in subject1:
     print("HIGH RISK: Possible phishing attempt.")
     print("------------------------")
-    print(f'Analyzed subject: {subject1}')
+    print(f'Analyzed subject: "{subject1}"')
 elif 'URGENT' in subject1:
     print("HIGH RISK: Possible phishing attempt.")
     print("------------------------")
-    print(f'Analyzed subject: {subject1}')
+    print(f'Analyzed subject: "{subject1}"')
 elif 'win' in subject1:
     print("MEDIUM RISK: Suspicious offer detected.")
     print("------------------------")
-    print(f'Analyzed subject: {subject1}')
+    print(f'Analyzed subject: "{subject1}"')
 elif 'free' in subject1:
      print("MEDIUM RISK: Suspicious offer detected.")
      print("------------------------")
-     print(f'Analyzed subject: {subject1}')
+     print(f'Analyzed subject: "{subject1}"')
 elif 'password reset' in subject1:
      print("LOW RISK: Verify legitimacy with sender.")
      print("------------------------")
-     print(f'Analyzed subject: {subject1}')
+     print(f'Analyzed subject: "{subject1}"')
 else:
     print("No phishing indicators detected.") 
     
