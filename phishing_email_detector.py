@@ -1,8 +1,9 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Ronan Mirchandani
+# DATE: 10/2/2025
+# BRIEF DESCRIPTION: Email publishing
+  
 
 
 
@@ -15,18 +16,34 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-
-
-
-
-
-
-
-
+subject1 = input(f'Enter the email subject line:' " ")
+print()
+print("SECURITY ASSESMENT:")
+if 'immediate action required' in subject1:
+    print("HIGH RISK: Possible phishing attempt.")
+    print("------------------------")
+    print(f'Analyzed subject: {subject1}')
+elif 'URGENT' in subject1:
+    print("HIGH RISK: Possible phishing attempt.")
+    print("------------------------")
+    print(f'Analyzed subject: {subject1}')
+elif 'win' in subject1:
+    print("MEDIUM RISK: Suspicious offer detected.")
+    print("------------------------")
+    print(f'Analyzed subject: {subject1}')
+elif 'free' in subject1:
+     print("MEDIUM RISK: Suspicious offer detected.")
+     print("------------------------")
+     print(f'Analyzed subject: {subject1}')
+elif 'password reset' in subject1:
+     print("LOW RISK: Verify legitimacy with sender.")
+     print("------------------------")
+     print(f'Analyzed subject: {subject1}')
+else:
+    print("No phishing indicators detected.") 
+    
 
 ########### END YER CODE ABOVE THIS LINE ###########
-
-    
 
 
 
@@ -78,6 +95,7 @@ Analyzed subject: "Did you request a password reset?"
 
 1. Was using `in` difficult or was it natural?
 
+It was suprisingly easy. Thr refrence on the assingment made it alot easier than what I thought it would be.
 
 
 
@@ -97,7 +115,7 @@ Analyzed subject: "Did you request a password reset?"
 Please gauge your utilization of AI on the following spectrum. Place an "X" in front
 of the appropriate response. Only choose one of the following:
 
-[ ] I did not use AI at all for this lab.
+[x] I did not use AI at all for this lab.
 [ ] I wrote the initial draft of the software but had AI help me make it better.
 [ ] I fed the lab description to AI and had it generate a response but I modified it.
 [ ] AI created the entire program for me.
@@ -111,7 +129,7 @@ may impede your understanding. Please rate how well you understand the concepts 
 
 [ ] I understand very little about this lab.
 [ ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
-[ ] I pretty much get it.
+[x] I pretty much get it.
 [ ] I'm solid. Totally got it.
 
 '''
