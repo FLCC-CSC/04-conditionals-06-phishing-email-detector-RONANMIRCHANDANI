@@ -2,7 +2,7 @@
 
 # NAME: Ronan Mirchandani
 # DATE: 10/2/2025
-# BRIEF DESCRIPTION: Email publishing
+# BRIEF DESCRIPTION: Email publishing 
   
 
 
@@ -17,8 +17,8 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 print("'''")
 subject1 = input(f'Enter the email subject line:' " ")
-print()
-print("SECURITY ASSESMENT:")
+print() 
+print("SECURITY ASSESSMENT:")
 if 'immediate action required' in subject1:
     print("HIGH RISK: Possible phishing attempt.")
     print("------------------------")
