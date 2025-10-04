@@ -15,7 +15,7 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-print("'''")
+#print("'''")
 subject1 = input(f'Enter the email subject line:' " ")
 print() 
 print("SECURITY ASSESSMENT:")
@@ -23,30 +23,30 @@ if 'immediate action required' in subject1:
     print("HIGH RISK: Possible phishing attempt.")
     print("------------------------")
     print(f'Analyzed subject: "{subject1}"')
-    print("'''")
+#    print("'''")
 elif 'URGENT' in subject1:
     print("HIGH RISK: Possible phishing attempt.")
     print("------------------------")
     print(f'Analyzed subject: "{subject1}"')
-    print("'''")
+#    print("'''")
 elif 'win' in subject1:
     print("MEDIUM RISK: Suspicious offer detected.")
     print("------------------------")
     print(f'Analyzed subject: "{subject1}"')
-    print("'''")
+#    print("'''")
 elif 'free' in subject1:
      print("MEDIUM RISK: Suspicious offer detected.")
      print("------------------------")
      print(f'Analyzed subject: "{subject1}"')
-     print("'''")
+#     print("'''")
 elif 'password reset' in subject1:
      print("LOW RISK: Verify legitimacy with sender.")
      print("------------------------")
      print(f'Analyzed subject: "{subject1}"')
-     print("'''")
+#     print("'''")
 else:
     print("No phishing indicators detected.") 
-    print("'''")
+#    print("'''")
     
 
 ########### END YER CODE ABOVE THIS LINE ###########
