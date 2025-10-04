@@ -15,7 +15,7 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-#print("'''")
+print("'''")
 subject1 = input(f'Enter the email subject line:' " ")
 print() 
 print("SECURITY ASSESSMENT:")
@@ -45,7 +45,9 @@ elif 'password reset' in subject1:
      print(f'Analyzed subject: "{subject1}"')
 #     print("'''")
 else:
-    print("No phishing indicators detected.") 
+    print("No phishing indicators detected.")
+    print("------------------------")
+    print(f'Analyzed subject: "{subject1}"') 
 #    print("'''")
     
 
