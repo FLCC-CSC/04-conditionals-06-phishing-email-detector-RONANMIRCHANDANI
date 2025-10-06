@@ -2,7 +2,7 @@
 
 # NAME: Ronan Mirchandani
 # DATE: 10/2/2025
-# BRIEF DESCRIPTION: Email publishing 
+# BRIEF DESCRIPTION: Email publishing thing. 
   
 
 
@@ -15,40 +15,41 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-print("'''")
-subject1 = input(f'Enter the email subject line:' " ")
+
+subject1 = input('Enter the email subject line: ')
+subject2 = subject1.lower() 
 print() 
 print("SECURITY ASSESSMENT:")
-if 'immediate action required' in subject1:
+if 'immediate action required' in subject2:
     print("HIGH RISK: Possible phishing attempt.")
     print("------------------------")
     print(f'Analyzed subject: "{subject1}"')
-#    print("'''")
-elif 'URGENT' in subject1:
+
+elif 'urgent' in subject2:
     print("HIGH RISK: Possible phishing attempt.")
     print("------------------------")
     print(f'Analyzed subject: "{subject1}"')
-#    print("'''")
-elif 'win' in subject1:
+
+elif 'win' in subject2:
     print("MEDIUM RISK: Suspicious offer detected.")
     print("------------------------")
     print(f'Analyzed subject: "{subject1}"')
-#    print("'''")
-elif 'free' in subject1:
+
+elif 'free' in subject2:
      print("MEDIUM RISK: Suspicious offer detected.")
      print("------------------------")
      print(f'Analyzed subject: "{subject1}"')
-#     print("'''")
-elif 'password reset' in subject1:
+
+elif 'password reset' in subject2:
      print("LOW RISK: Verify legitimacy with sender.")
      print("------------------------")
      print(f'Analyzed subject: "{subject1}"')
-#     print("'''")
+
 else:
     print("No phishing indicators detected.")
     print("------------------------")
     print(f'Analyzed subject: "{subject1}"') 
-#    print("'''")
+
     
 
 ########### END YER CODE ABOVE THIS LINE ###########
